@@ -114,7 +114,7 @@ E.g. for the file system this is
 which means you have to define
 ```python
 UPLOADER = {
-    'uploader': python_telegram_bot_template,  # What uploader to use
+    'uploader': python_telegram_bot_template.uploaders.file_system.FileSystemUploader,  # What uploader to use
     'configuration': {
         'path': '/some/path/to/your/uploads',
     }
@@ -126,7 +126,7 @@ If you are using the ssh uploader you have to define more:
 ```
 ```python
 UPLOADER = {
-    'uploader': 'your_bot_name.uploaders.ssh.SSHUploader',
+    'uploader': 'python_telegram_bot_template.uploaders.ssh.SSHUploader',
     'configuration': {
         'host': '000.000.000.000',
         'user': 'chuck.norris',

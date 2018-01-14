@@ -3,7 +3,7 @@ from tempfile import NamedTemporaryFile
 
 import paramiko
 
-from . import UploaderBase
+from .base import UploaderBase
 
 
 class SSHUploader(UploaderBase):

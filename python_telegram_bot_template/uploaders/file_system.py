@@ -1,7 +1,7 @@
 import os
 from tempfile import NamedTemporaryFile
 
-from . import UploaderBase
+from .base import UploaderBase
 
 
 class FileSystemUploader(UploaderBase):

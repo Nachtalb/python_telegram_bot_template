@@ -18,7 +18,7 @@ MODE = {
 }
 
 UPLOADER = {
-    'uploader': 'download_as_gif.uploaders.ssh.SSHUploader',  # What uploader to use
+    'uploader': 'python_telegram_bot_template.uploaders.ssh.SSHUploader',  # What uploader to use
     'url' 'YOUR_DOMAIN_FILES_DIR' 
     'configuration': {
         'host': 'YOUR_HOST_IP',
